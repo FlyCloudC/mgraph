@@ -1,0 +1,13 @@
+{
+  "name": "FlyCloudC/mgraph",
+  "version": "0.1.0",
+  "readme": "README.md",
+  "repository": "",
+  "license": "MIT",
+  "keywords": [
+    "bfs",
+    "dfs"
+  ],
+  "description": "Graph traversal without creating additional data structures",
+  "source": "src"
+}

@@ -1,0 +1,25 @@
+package "FlyCloudC/mgraph"
+
+// Values
+fn[A] bfs_at(A) -> BfsAt[A]
+
+fn[A] dfs_at(A) -> DfsAt[A]
+
+// Types and methods
+type BfsAt[A]
+fn[A : Node] BfsAt::each(Self[A], (A) -> Unit) -> Unit
+fn[A : Node] BfsAt::iter(Self[A]) -> Iter[A]
+
+type DfsAt[A]
+fn[A : Node] DfsAt::each(Self[A], (A) -> Unit) -> Unit
+fn[A : Node] DfsAt::iter(Self[A]) -> Iter[A]
+
+// Type aliases
+
+// Traits
+pub(open) trait Node {
+  each_nexts(Self, (Self) -> Unit) -> Unit
+  will_visit(Self) -> Bool
+  set_will_visit(Self, Bool) -> Unit
+}
+
