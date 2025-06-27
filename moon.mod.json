@@ -1,8 +1,8 @@
 {
   "name": "FlyCloudC/mgraph",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "readme": "README.md",
-  "repository": "",
+  "repository": "https://github.com/FlyCloudC/mgraph",
   "license": "MIT",
   "keywords": [
     "bfs",
