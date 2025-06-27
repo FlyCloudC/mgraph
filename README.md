@@ -1,16 +1,16 @@
 # FlyCloudC/mgraph
 
-A lightweight graph traversal library for MoonBit, providing BFS (Breadth-First Search) utilities.
+A lightweight graph traversal library for MoonBit, providing BFS (Breadth-First Search) and DFS (Depth-First Search) utilities.
 
 ## Features
 
 - Define custom graph nodes via the `Node` trait.
-- Perform BFS traversal using `bfs_at` and `dfs_at`.
-- Iterate over nodes in BFS order with `iter` and `each`.
+- Perform traversal using `bfs_at` or `dfs_at`.
+- Iterate over nodes with `iter` or `each`.
 
 ## Example
 
-Step 1 - define an `Person` type.
+Step 1 - Define your type.
 
 ```mbt
 struct Person {
@@ -37,7 +37,7 @@ fn Person::set_mother(self : Person, mother : Person) -> Unit {
 }
 ```
 
-Step 2 - Impl `Node` for `Person`. You may need to add a `mut visit` field.
+Step 2 - Impl `Node` for your type. You may need to add a `mut visit` field.
 
 ```mbt
 struct Person {
@@ -113,6 +113,12 @@ inspect(
   ,
 )
 ```
+
+A complete example can be found in [`src/example_1_test.mbt`](src/example_1_test.mbt).
+
+## More Examples
+
+See another example in [`src/example_2_test.mbt`](src/example_2_test.mbt).
 
 ## License
 
