@@ -1,5 +1,5 @@
 ///|
-type DfsAt[A] A
+struct DfsAt[A](A)
 
 ///|
 pub fn[A] dfs_at(a : A) -> DfsAt[A] {

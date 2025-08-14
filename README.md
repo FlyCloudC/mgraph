@@ -94,9 +94,9 @@ let visited = []
 bfs_at(father).each(visited.push(_))
 inspect(
   visited,
-  content=
+  content=(
     #|["Father", "Child 1", "Child 2", "Child 3", "Grandma", "Grandpa", "Mother"]
-  ,
+  ),
 )
 ```
 
@@ -108,9 +108,9 @@ let visited_by_iter = []
 bfs_at(father).iter().each(visited_by_iter.push(_))
 inspect(
   visited_by_iter,
-  content=
+  content=(
     #|["Father", "Child 1", "Child 2", "Child 3", "Grandma", "Grandpa", "Mother"]
-  ,
+  ),
 )
 ```
 

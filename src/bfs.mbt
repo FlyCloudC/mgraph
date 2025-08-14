@@ -1,5 +1,5 @@
 ///|
-type BfsAt[A] A
+struct BfsAt[A](A)
 
 ///|
 pub fn[A] bfs_at(a : A) -> BfsAt[A] {
