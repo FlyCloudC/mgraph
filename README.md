@@ -21,7 +21,7 @@ struct Person {
 }
 
 fn Person::new(name : String) -> Person {
-  { name, father: None, mother: None, children: [], visit: false }
+  { name, father: None, mother: None, children: [] }
 }
 
 fn Person::set_father(self : Person, father : Person) -> Unit {
@@ -40,9 +40,15 @@ fn Person::set_mother(self : Person, mother : Person) -> Unit {
 Step 2 - Impl `Node` for your type. You may need to add a `mut visit` field.
 
 ```mbt
+// add `mut visit` field
 struct Person {
   ...
   mut visit : Bool
+}
+
+// init `visit` to false
+fn Person::new(name : String) -> Person {
+  { name, father: None, mother: None, children: [], visit: false }
 }
 
 impl Node for Person with set_will_visit(self, bool) {
