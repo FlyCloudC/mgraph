@@ -1,9 +1,12 @@
+// Generated using `moon info`, DON'T EDIT IT
 package "FlyCloudC/mgraph"
 
 // Values
 fn[A] bfs_at(A) -> BfsAt[A]
 
 fn[A] dfs_at(A) -> DfsAt[A]
+
+// Errors
 
 // Types and methods
 type BfsAt[A]
